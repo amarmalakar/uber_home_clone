@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html {
+    font-size: 10px;
+}
+
+/* basic */
+.container {
+    max-width: 1164px;
+    margin: auto;
+}
+p {
+    font-size: 1.6rem;
+}
+.p-15 {padding: 15px;}
+.btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    display: inline-block;
+}
+.btn-black {
+    background-color: #000;
+    color: #fff;
+}
+
+/* uber__for__buisness start */
+.uber__for__buisness {
+    width: 100%;
+    height: 250px;
+
+    background-image: url('https://www.uber-assets.com/image/upload/v1613106985/assets/0e/47aa71-35cb-459a-a975-78c61ea300e2/original/HP-U4B-NYC-bkg.png');
+    background-size: cover;
+    background-position: bottom;
+}
+.uber__for__buisness--wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .1);
+    padding: 45px 30px;
+    display: flex;
+    justify-content: center;
+}
+.uber__for__buisness--wrapper > .container {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.uber__for__buisness--wrapper > .container a {
+    width: 115px;
+}
+.uber__for__buisness--title {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.uber__for__buisness--desc {
+    font-size: 1.6rem;
+}
+/* uber__for__buisness end */
+
+/* home__flex */
+.home__flex {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+.home__flex--img {
+    width: 50%;
+    margin-right: 100px;
+}
+.home__flex--img-right {
+    width: 50%;
+    margin-right: 0;
+    margin-left: 100px;
+}
+.home__flex--heading {
+    font-size: 4.5rem;
+    color: #444;
+    font-weight: 600;
+    line-height: 2;
+}
+.home__flex--desc {font-size: 1.6rem;line-height: 2;}
+.home__flex--link {
+    color: #111;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    line-height: 4;
+}
+/* home flex end */
+
+/* focus__on__safety start */
+.focus__on__safety {
+    margin-top: 60px;
+}
+.focus__on__safety--title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 24px;
+}
+.focus__on__safety--grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.focus__on__safety--grid img {width: 100%;}
+.focus__on__safety--grid h4 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+    margin: 16px 0;
+}
+.focus__on__safety--grid p {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+/* focus__on__safety end */
+
+/* about__us__grid */
+.about__us__grid {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.about__us__grid--icon {line-height: 3;}
+.about__us__grid--icon > i {font-size: 2rem;color: #111;}
+.about__us__grid--title {
+    font-size: 1.8rem;
+    color: #444;
+    line-height: 2.6;
+}
+
+/* download__app__flex */
+.download__app__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.download__app__grid--a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #000;
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.download__app__grid--icon {
+    position: relative;
+    right: 0px;
+    transition: all ease-in 0.3s;
+}
+.download__app__grid--a:hover .download__app__grid--icon {
+    right: -10px;
+    transition: all ease-in 0.3s;
+}
+.download__app__grid--a img {
+    margin-right: 12px;
+    width: 150px;
+    height: 150px;
+}
+
+/* signup__grid */
+.signup__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.signup__grid a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.signup__grid--heading {font-size: 3.4rem;}
+.signup__grid a:hover {color: #444;}
+.signup__grid a:hover .signup__grid--icon {
+    animation: signupNext .3s ease-in-out 1;
+}
+@keyframes signupNext {
+    0%, 100% {transform: scaleX(1);}
+    20% {transform: scaleX(0);}
+    30% {transform: scaleX(0);}
+}
+
+
+footer {
+    background-color: #000;
+    padding: 90px 60px;
+    color: #fff;
+}
+.footer__heading {margin-bottom: 30px;}
+.footer__heading h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+.footer__heading h3 > span {font-size: 3.2rem;font-weight: 300;}
+.footer__heading h4 {font-size: 2rem;font-weight: 400;}
+
+footer ul {list-style: none;}
+footer a {text-decoration: none;}
+
+.footer__widget__1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 30px;
+}
+.footer__widget__1 * {color: #fff;font-size: 1.4rem;}
+.footer__widget__1 h4 {font-size: 1.8rem;font-weight: 400;margin-bottom: 16px;}
+.footer__widget__1 a:hover {color: #777;}
+.footer__widget__1 ul li {line-height: 2.5;}
+
+.footer__widget__2 * {
+    color: #fff;
+    font-size: 1.4rem;
+}
+.footer__widget__2 {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__widget__2__social__links {
+    margin-right: 30px;
+    display: flex;
+}
+.footer__widget__2__social__links li a {display: block;padding: 18px;}
+.footer__widget__2__social__links li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.footer__widget__2__details {
+    flex: 1;
+    display: flex;
+}
+.footer__widget__2__details li:first-child {
+    margin-right: 24px;
+}
+.footer__widget__2__details li a {display: block;padding: 18px;}
+.footer__widget__2__details li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.footer__widget__2__details li i {margin-right: 6px;}
+.footer__widget__2__img {
+    display: flex;
+}
+.footer__widget__2__img img {width: 100px;}
+.footer__widget__2__img img:first-child {margin-right: 12px;}
+
+.footer__widget__3 * {font-size: 1.3rem;color: #777;}
+.footer__widget__3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+}
+.footer__widget__3 ul {display: flex;}
+.footer__widget__3 ul li {padding: 0 12px;}
+
+
+@media (max-width: 896px) {
+    .uber__for__buisness {
+        background-image: url('https://www.uber-assets.com/image/upload/v1614379346/assets/f4/63ca3e-b0d7-4463-988f-a2fead503ddc/original/DotCom_Update_U4B_bg_mobileD.png');
+    }
+
+    /* home__flex */
+    .home__flex {display: block;padding: 15px 0;}
+    .home__flex:first-child {padding-top: 60px;}
+    .home__flex--img {width: 100%;margin: 0;}
+    .home__flex--img-right {width: 100%;margin: 0;}
+    .home__flex--texts {width: 100%;}
+
+    /* focus__on__safety */
+    .focus__on__safety--title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .about__us__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .download__app__grid {grid-template-columns: repeat(1, 1fr);}
+    .download__app__grid--a {justify-content: unset;}
+    .download__app__grid--text {flex: 1;}
+    .download__app__grid--a img {width: 85px;height: 85px;}
+
+    /* footer */
+    footer {padding: 60px 30px;}
+    .footer__widget__1 {grid-template-columns: repeat(2, 1fr);}
+    .footer__widget__1 > div {margin-bottom: 30px;}
+    .footer__widget__2 {display: block;}
+    .footer__widget__2__social__links {margin-bottom: 30px;}
+    .footer__widget__2__details {display: block;}
+    .footer__widget__2__details {margin-bottom: 30px;}
+    .footer__widget__3 {display: block;}
+    .footer__widget__3 > p {margin-bottom: 45px;}
+}
+@media (max-width: 596px) {
+    .uber__for__buisness--title {font-size: 2.8rem;}
+    .uber__for__buisness--wrapper {padding: 30px;}
+    .home__flex--heading {font-size: 3rem;}
+
+    /* focus__on__safety */
+    .focus__on__safety {margin-top: 30px;}
+    .focus__on__safety--title {font-size: 2.6rem;}
+    .focus__on__safety--grid {display: block;}
+
+    .about__us__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .signup__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .signup__grid--heading {font-size: 2.6rem;}
+    .signup__grid a {font-size: 2rem;}
+
+    .footer__widget__1 {grid-template-columns: repeat(1, 1fr);}
+}
